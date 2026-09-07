@@ -8,11 +8,7 @@ A modern, high-performance SaaS landing page for **Nova**, an all-in-one platfor
 
 - **Blazing Fast Architecture**: Powered by Next.js 16 with Turbopack for instant static page generation (SSG) and sub-100ms load times.
 - **Modern Design System**: Built with Tailwind CSS v4 using fluid typography, balanced whitespace, and an organic warm-light aesthetic.
-- **Mobile-First Responsiveness**: Fully audited and optimized from small 320px screens (iPhone SE, foldable displays) to ultra-wide desktop monitors.
-- **Interactive Header & Mobile Drawer**: Sticky blur navigation header with a smooth mobile hamburger menu toggle.
-- **Interactive FAQ Accordion**: Accessible question-and-answer accordion with animated chevron transitions.
-- **Clean Auth Pages**: Dedicated `/login` and `/signup` pages with optimized input layouts and clean brand icon components.
-- **100% SEO & Accessibility Ready**: Strict heading hierarchy (`h1` → `h2` → `h3`), OpenGraph cards, Twitter metadata, and descriptive labels.
+- **Full responsive pages**: Including mobile, tablet, and desktop devices.
 
 ---
 
