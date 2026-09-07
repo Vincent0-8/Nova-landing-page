@@ -3,6 +3,7 @@ import { Hero } from "@/components/hero"
 import { Solutions } from "@/components/solutions"
 import { HowItWorks } from "@/components/how-it-works"
 import { SocialProof } from "@/components/social-proof"
+import { Faq } from "@/components/faq"
 import { CtaFooter } from "@/components/cta-footer"
 
 export default function Page() {
@@ -14,6 +15,7 @@ export default function Page() {
         <Solutions />
         <HowItWorks />
         <SocialProof />
+        <Faq />
         <CtaFooter />
       </main>
     </div>

@@ -1,33 +1,65 @@
-# Nova-landing-page
+# Nova — Ship Websites That Feel Alive
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+A modern, high-performance SaaS landing page for **Nova**, an all-in-one platform to design, build, and launch websites. Built with **Next.js 16 (App Router + Turbopack)**, **Tailwind CSS v4**, **TypeScript**, and native hardware-accelerated animations.
 
-## Built with v0
+---
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+## Features
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_1aHwTHqaBlHI1dFo2rcGV99OsAZg)
+- **Blazing Fast Architecture**: Powered by Next.js 16 with Turbopack for instant static page generation (SSG) and sub-100ms load times.
+- **Modern Design System**: Built with Tailwind CSS v4 using fluid typography, balanced whitespace, and an organic warm-light aesthetic.
+- **Mobile-First Responsiveness**: Fully audited and optimized from small 320px screens (iPhone SE, foldable displays) to ultra-wide desktop monitors.
+- **Interactive Header & Mobile Drawer**: Sticky blur navigation header with a smooth mobile hamburger menu toggle.
+- **Interactive FAQ Accordion**: Accessible question-and-answer accordion with animated chevron transitions.
+- **Clean Auth Pages**: Dedicated `/login` and `/signup` pages with optimized input layouts and clean brand icon components.
+- **100% SEO & Accessibility Ready**: Strict heading hierarchy (`h1` → `h2` → `h3`), OpenGraph cards, Twitter metadata, and descriptive labels.
 
-## Getting Started
+---
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+| Layer               | Technology                                                                                      |
+| ------------------- | ----------------------------------------------------------------------------------------------- |
+| **Framework**       | [Next.js 16](https://nextjs.org/) (App Router, Turbopack)                                       |
+| **Styling**         | [Tailwind CSS v4](https://tailwindcss.com/)                                                     |
+| **Language**        | [TypeScript 5](https://www.typescriptlang.org/)                                                 |
+| **Icons**           | [Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/) |
+| **Analytics**       | [@vercel/analytics](https://vercel.com/analytics)                                               |
+| **Package Manager** | [pnpm](https://pnpm.io/)                                                                        |
+
+---
+
+## Project Structure
+
+```text
+├── app/
+│   ├── globals.css         # Tailwind v4 theme tokens, layer base & keyframe animations
+│   ├── layout.tsx          # Root layout with fonts, metadata, OpenGraph & icons
+│   ├── page.tsx            # Home landing page
+│   ├── login/page.tsx      # Sign-in authentication page
+│   └── signup/page.tsx     # Account registration page
+├── components/
+│   ├── cta-footer.tsx      # Newsletter subscription card & categorized footer
+│   ├── faq.tsx             # Interactive FAQ accordion component
+│   ├── hero.tsx            # Hero section with headline, CTA, canvas & notice
+│   ├── how-it-works.tsx    # 6-step guided process workflow
+│   ├── icons.tsx           # Clean re-exported brand icons (Google, GitHub)
+│   ├── in-view.tsx         # Zero-dependency IntersectionObserver scroll reveal
+│   ├── nova-logo.tsx       # Custom SVG vector brand mark
+│   ├── site-header.tsx     # Sticky header with mobile drawer toggle
+│   └── social-proof.tsx    # Trusted brand marquee & customer quote card
+├── public/                 # Static assets (favicons, images, vector icons)
+└── .vscode/settings.json   # IDE linting configuration for Tailwind CSS v4
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-## Learn More
+### Prerequisites
 
-To learn more, take a look at the following resources:
+Make sure you have [Node.js 18+](https://nodejs.org/) and [pnpm](https://pnpm.io/) installed.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+---
+
+Created 07/09/2026 | Vincent
