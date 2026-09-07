@@ -1,4 +1,5 @@
 # Nova — Ship Websites That Feel Alive
+# Live Deployment - https://nova-landing-appv1.vercel.app/
 
 A modern, high-performance SaaS landing page for **Nova**, an all-in-one platform to design, build, and launch websites. Built with **Next.js 16 (App Router + Turbopack)**, **Tailwind CSS v4**, **TypeScript**, and native hardware-accelerated animations.
 
