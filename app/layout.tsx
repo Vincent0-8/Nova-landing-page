@@ -19,12 +19,12 @@ export const metadata: Metadata = {
   title: "Nova -- Ship websites that feel alive",
   description:
     "Nova is the all-in-one platform to design, build, and launch beautiful websites that work everywhere. Set it up once, get wonderful results forever.",
-  metadataBase: new URL("https://nova-landing-page-beta.vercel.app"),
+  metadataBase: new URL("https://nova-landing-appv1.vercel.app"),
   openGraph: {
     title: "Nova -- Ship websites that feel alive",
     description:
       "Nova is the all-in-one platform to design, build, and launch beautiful websites that work everywhere.",
-    url: "https://nova-landing-page-beta.vercel.app",
+    url: "https://nova-landing-appv1.vercel.app",
     siteName: "Nova",
     images: [
       {

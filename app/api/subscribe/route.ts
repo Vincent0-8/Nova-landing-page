@@ -2,7 +2,7 @@ import { Resend } from "resend"
 import { NextResponse } from "next/server"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
-const SITE_URL = "https://nova-landing-page-beta.vercel.app"
+const SITE_URL = "https://nova-landing-appv1.vercel.app"
 
 export async function POST(req: Request) {
   try {
@@ -33,7 +33,7 @@ export async function POST(req: Request) {
           <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:28px;">
             <tr>
               <td style="vertical-align:middle;">
-                <img src="${SITE_URL}/icon.svg" width="36" height="36" alt="Nova" style="display:block;border-radius:8px;" />
+                <img src="${SITE_URL}/logo-email.png" width="36" height="36" alt="Nova" style="display:block;border-radius:8px;width:36px;height:36px;" />
               </td>
               <td style="padding-left:10px;vertical-align:middle;">
                 <span style="font-size:17px;font-weight:600;color:#18202e;letter-spacing:-0.3px;">Nova</span>
