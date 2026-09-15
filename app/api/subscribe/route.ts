@@ -2,6 +2,7 @@ import { Resend } from "resend"
 import { NextResponse } from "next/server"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
+const SITE_URL = "https://nova-landing-page-beta.vercel.app"
 
 export async function POST(req: Request) {
   try {
@@ -24,17 +25,15 @@ export async function POST(req: Request) {
     <tr><td align="center">
       <table width="480" cellpadding="0" cellspacing="0" border="0" style="max-width:480px;width:100%;background:#ffffff;border-radius:20px;overflow:hidden;border:1px solid #e4e7e1;">
 
-        <!-- Header accent bar -->
         <tr><td height="4" style="background:#a9ea51;font-size:0;line-height:0;">&nbsp;</td></tr>
 
-        <!-- Body -->
         <tr><td style="padding:36px 40px 32px;">
 
           <!-- Logo -->
           <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:28px;">
             <tr>
-              <td style="width:36px;height:36px;background:#1c2035;border-radius:8px;text-align:center;vertical-align:middle;">
-                <span style="font-family:Georgia,serif;font-size:20px;font-weight:700;color:#a9ea51;line-height:36px;display:block;">N</span>
+              <td style="vertical-align:middle;">
+                <img src="${SITE_URL}/icon.svg" width="36" height="36" alt="Nova" style="display:block;border-radius:8px;" />
               </td>
               <td style="padding-left:10px;vertical-align:middle;">
                 <span style="font-size:17px;font-weight:600;color:#18202e;letter-spacing:-0.3px;">Nova</span>
@@ -42,11 +41,9 @@ export async function POST(req: Request) {
             </tr>
           </table>
 
-          <!-- Heading -->
           <h1 style="margin:0 0 8px;font-size:22px;font-weight:700;color:#18202e;letter-spacing:-0.5px;">New Subscriber! &#127881;</h1>
           <p style="margin:0 0 28px;font-size:14px;color:#6b7a6b;line-height:1.6;">Someone just subscribed to Nova updates.</p>
 
-          <!-- Email card -->
           <table width="100%" cellpadding="0" cellspacing="0" border="0">
             <tr>
               <td style="background:#f7f9f5;border:1px solid #e4e7e1;border-radius:12px;padding:18px 20px;">
@@ -56,14 +53,12 @@ export async function POST(req: Request) {
             </tr>
           </table>
 
-          <!-- CTA hint -->
           <p style="margin:24px 0 0;font-size:13px;color:#9aab96;line-height:1.5;">
             You can reply to this email to reach out to the subscriber directly.
           </p>
 
         </td></tr>
 
-        <!-- Footer -->
         <tr>
           <td style="background:#f7f9f5;border-top:1px solid #e4e7e1;padding:16px 40px;text-align:center;">
             <p style="margin:0;font-size:12px;color:#b0bba8;">Nova Landing Page &copy; ${new Date().getFullYear()}</p>

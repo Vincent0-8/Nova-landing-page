@@ -1,7 +1,6 @@
 import { Analytics } from "@vercel/analytics/next"
 import type { Metadata, Viewport } from "next"
 import { Inter, Bricolage_Grotesque } from "next/font/google"
-import { ScrollToTopOnRefresh } from "@/components/scroll-to-top"
 import "./globals.css"
 
 const inter = Inter({
@@ -17,15 +16,15 @@ const bricolage = Bricolage_Grotesque({
 })
 
 export const metadata: Metadata = {
-  title: "Nova — Ship websites that feel alive",
+  title: "Nova -- Ship websites that feel alive",
   description:
     "Nova is the all-in-one platform to design, build, and launch beautiful websites that work everywhere. Set it up once, get wonderful results forever.",
-  metadataBase: new URL("https://nova-landing-appv1.vercel.app"),
+  metadataBase: new URL("https://nova-landing-page-beta.vercel.app"),
   openGraph: {
-    title: "Nova — Ship websites that feel alive",
+    title: "Nova -- Ship websites that feel alive",
     description:
       "Nova is the all-in-one platform to design, build, and launch beautiful websites that work everywhere.",
-    url: "https://nova-landing-appv1.vercel.app",
+    url: "https://nova-landing-page-beta.vercel.app",
     siteName: "Nova",
     images: [
       {
@@ -40,19 +39,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nova — Ship websites that feel alive",
+    title: "Nova -- Ship websites that feel alive",
     description:
       "The all-in-one platform to design, build, and launch websites that feel alive.",
     images: ["/hero-canvas.png"],
   },
   icons: {
-    icon: [
-      { url: "/favicon.ico",          sizes: "any" },
-      { url: "/icon-light-32x32.png", media: "(prefers-color-scheme: light)" },
-      { url: "/icon-dark-32x32.png",  media: "(prefers-color-scheme: dark)" },
-      { url: "/icon.svg",             type: "image/svg+xml" },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/icon.svg",
   },
 }
 
@@ -67,9 +60,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`bg-background ${inter.variable} ${bricolage.variable}`}>
       <body className="font-sans antialiased">
-        <ScrollToTopOnRefresh />
         {children}
-        {Boolean(process.env.VERCEL) && <Analytics />}
+        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
   )
